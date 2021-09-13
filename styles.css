@@ -1,14 +1,15 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.logo{
+.logo {
   text-transform: uppercase;
   cursor: pointer;
 }
-.overlay{
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +20,7 @@
   mix-blend-mode: overlay;
 }
 
-.showcase{
+.showcase {
   position: absolute;
   right: 0;
   width: 100%;
@@ -30,36 +31,99 @@
   align-items: center;
   background: #111;
   color: #fff;
-  z-index:2;
-
+  z-index: 2;
 }
-.showcase header{
+
+.showcase header {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   padding: 40px 100px;
   z-index: 10;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.toggle{
-text-transform: uppercase;
-cursor: pointer;
+.toggle {
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+
 }
-.text{
+
+.text {
   position: relative;
   z-index: 3;
 }
 
-.showcase video{
+.showcase video {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.7;
+}
+.social{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.social li{
+  list-style: none;
+
+}
+.social li a{
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  /* transform: scale(0.5); */
+  transition: 0.5s;
+
+}
+
+.social li a:hover{
+  letter-spacing: 3px;
+}
+.text a{
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: darkgrey;
+  text-transform: uppercase;
+  background: white;
+  display: inline-block;
+  padding: 6px;
+  transition: 0.5s;
+}
+
+.text a:hover{
+  letter-spacing: 4px;
+}
+.text h2{
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3{
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p{
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 600px;
 }
